@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=flashlmdd
+DEVICE=timelm
 VENDOR=lge
 
 # Load extract_utils and do some sanity checks

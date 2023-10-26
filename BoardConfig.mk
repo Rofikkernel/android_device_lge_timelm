@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/flashlmdd
+DEVICE_PATH := device/lge/timelm
 
-# inherit from common v50
+# inherit from common LG V60
 -include device/lge/flash-common/BoardConfigCommon.mk
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.hardware=flashlmdd
+BOARD_KERNEL_CMDLINE += androidboot.hardware=timelm
 
 # Recovery
 TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
@@ -29,4 +29,4 @@ TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
 VENDOR_SECURITY_PATCH := 2021-08-01
 
 # inherit from the proprietary version
--include vendor/lge/flashlmdd/BoardConfigVendor.mk
+-include vendor/lge/timelm/BoardConfigVendor.mk
